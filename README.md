@@ -5,4 +5,4 @@ Minor update to my [previous portfolio](https://bernardjbs.github.io/hw-boot-wk0
 
 
 ## Link to deployed webpage
-https://bernardjbs.github.io/hw-boot-wk08-Updated-Portfolio/
+https://bernardjbs.github.io/hw-boot-wk16-Updated-Portfolio2/
