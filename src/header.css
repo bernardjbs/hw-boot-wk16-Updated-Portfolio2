@@ -1,0 +1,151 @@
+/**** HEADER SECTION *****/
+header {
+  /* border: 2px solid red; */
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header_container {
+  text-align: center;
+  height: 100vh;
+}
+
+/**** CTA *****/
+.cta {
+  margin: 2.5rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/**** HEADER SOCIALS *****/
+
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/**** HERO *****/
+.image_hero {
+  width: 12rem;
+  background: var(--color-light); 
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.hero-on {
+  background: green;
+}
+
+.hero-off {
+  background: rgba(255, 0, 0, 0.603);
+}
+
+#img-on {
+  margin-top: 3rem;
+  width: 8rem;
+}
+
+#img-on:hover {
+  cursor: pointer;
+}
+
+#code-repeat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.animate-eat {
+  animation-name: onEat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.animate-sleep {
+  animation-name: onSleep;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+.animate-code {
+  animation-name: onCode;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.animate-repeat {
+  animation-name: onRepeat;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes onEat {
+  0%    {background: var(--color-light); }
+  25%   {background: rgb(250, 250, 185); }
+  50%   {background: rgb(250, 250, 115); }
+  75%   {background: rgb(248, 248, 63); }
+  100%  {background: yellow; }
+}
+
+@keyframes onSleep {
+  0%    {background: var(--color-light); }
+  25%   {background: rgb(133, 104, 104); }
+  50%   {background: rgb(133, 60, 60); }
+  75%   {background: rgb(133, 28, 28); }
+  100%  {background: rgb(124, 1, 1); }
+}
+@keyframes onCode {
+  0%    {background: var(--color-light); }
+  25%   {background: rgb(91, 98, 131); }
+  50%   {background: rgb(65, 79, 143); }
+  75%   {background: rgb(34, 54, 143); }
+  100%  {background: rgb(0, 26, 143); }
+}
+@keyframes onRepeat {
+  0%    {background: var(--color-light); }
+  25%   {background: rgb(75, 105, 88); }
+  50%   {background: rgb(54, 114, 79); }
+  75%   {background: rgb(22, 122, 64); }
+  100%  {background: rgb(0, 112, 47); }
+}
+
+
+/* MEDIA QUERIES (MEDIUM DEVICES)*/
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+  .header_container {
+    height: auto;
+  }
+  .image_hero {
+    width: 10rem
+  }
+}
+
+/* MEDIA QUERIES (SMALL DEVICES)*/
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  .image_hero {
+    width: 5rem
+  }
+  #img-on {
+    width: 4rem;
+  }
+}
